@@ -1,4 +1,4 @@
-import { PortfolioPage } from '@/pages/PortfolioPage';
+import PortfolioPage from '@/pages/PortfolioPage';
 
 const Portfolio = () => {
  return <PortfolioPage />;
