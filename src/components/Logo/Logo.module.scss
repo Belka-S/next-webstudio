@@ -1,4 +1,4 @@
-// @import 'breakpoints';
+@import 'mobileFirst';
 
 .logo {
  display: block;
@@ -9,8 +9,8 @@
  line-height: 1.17;
  color: var(--accentColor);
 
- // @include desktop {
- //   font-size: 26px;
- //   line-height: 1.19;
- // }
+ @include desktop {
+  font-size: 26px;
+  line-height: 1.19;
+ }
 }
