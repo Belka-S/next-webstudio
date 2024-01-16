@@ -13,7 +13,7 @@ const ContactInfo = () => {
         href="mailto:info@devstudio.com"
         aria-label="Mail"
       >
-        <IconSvg className={s.contacts__icon} svgId="contact-mail" />
+        <IconSvg className={s.contacts__icon} svgId="contactMail" />
         info@devstudio.com
       </a>
 
@@ -22,7 +22,7 @@ const ContactInfo = () => {
         href="tel:+380961111111"
         aria-label="Phone"
       >
-        <IconSvg className={s.contacts__icon} svgId="contact-phone" />
+        <IconSvg className={s.contacts__icon} svgId="contactPhone" />
         +38 096 111 11 11
       </a>
     </div>
