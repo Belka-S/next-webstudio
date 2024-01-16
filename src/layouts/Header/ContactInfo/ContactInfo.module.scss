@@ -1,0 +1,75 @@
+@import 'mobileFirst';
+@import 'desktopFirst';
+
+.contacts {
+  display: none;
+
+  @include tablet {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+
+  list-style: none;
+
+  &__item:not(:last-child) {
+    @include lessDesktop {
+      margin-bottom: 10px;
+    }
+
+    @include desktop {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 28px;
+      font-size: 14px;
+    }
+
+    display: flex;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--secondaryTextColor);
+    transition: color 250ms;
+
+    &:not(:last-child) {
+      @include lessDesktop {
+        margin-bottom: 10px;
+      }
+
+      @include desktop {
+        margin-right: 30px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--hoverColor);
+    }
+  }
+
+  &__icon {
+    @include lessDesktop {
+      height: 14px;
+      width: 14px;
+      margin-right: 10px;
+    }
+
+    margin-right: 10px;
+
+    fill: currentColor;
+  }
+}

@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import Logo from '@/components/Logo';
 
+import ContactInfo from './ContactInfo';
 import s from './Header.module.scss';
 import SiteNav from './SiteNav';
 
@@ -13,6 +14,7 @@ const Header = () => {
         <Logo className={s.header__logo} />
       </Link>
       <SiteNav />
+      <ContactInfo />
     </header>
   );
 };

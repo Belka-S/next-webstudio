@@ -1,0 +1,81 @@
+@import 'mobileFirst';
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+    margin-left: 87px;
+  }
+
+  @include desktop {
+    margin-left: 93px;
+  }
+
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 28px;
+    display: flex;
+    position: relative;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primaryTextColor);
+    transition: color 250ms;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    // &:hover,
+    // &:focus {
+    //   color: var(--accentColor);
+    // }
+
+    &::after {
+      position: absolute;
+      bottom: 26px;
+      right: 0;
+
+      width: 0;
+      height: 4px;
+      display: block;
+      content: '';
+      border-radius: 2px;
+
+      background-color: var(--accentColor);
+
+      transition: width 250ms;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      left: 0;
+      width: 100%;
+    }
+
+    // &--current {
+    //   color: var(--accentColor);
+    // }
+
+    &--current::after {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+
+      height: 4px;
+      width: 100%;
+      display: block;
+      content: '';
+      transform: scale(1, 1);
+
+      background-color: var(--accentColor);
+      border-radius: 2px;
+    }
+  }
+}

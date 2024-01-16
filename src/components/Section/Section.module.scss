@@ -1,7 +1,9 @@
-.section {
-  padding: 60px 0;
+@import 'mobileFirst';
 
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
+.section {
+ padding: 60px 0;
+
+ @include desktop {
+  padding: 94px 0;
+ }
 }

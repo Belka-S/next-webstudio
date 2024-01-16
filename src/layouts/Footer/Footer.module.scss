@@ -1,4 +1,11 @@
+.footer {
+ display: flex;
+ justify-content: center;
+
+ border-top: 1px solid var(--borderColor);
+}
+
 .footer__logo {
-  font-weight: inherit;
-  color: var(--primaryBgColor);
+ font-weight: inherit;
+ color: var(--primaryBgColor);
 }
