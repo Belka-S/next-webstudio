@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const raleway = Raleway({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '500', '700'],
   display: 'swap',
   variable: '--fontRaleway',
 });

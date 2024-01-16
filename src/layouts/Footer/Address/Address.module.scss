@@ -1,0 +1,38 @@
+.footer__logo {
+  font-weight: 500;
+  color: var(--primaryBgColor);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
+}
+
+.address__link {
+  margin-top: 9px;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms;
+
+  &:nth-of-type(2) {
+    margin-top: 20px;
+    color: var(--primaryBgColor);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accentColor);
+  }
+}

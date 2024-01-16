@@ -1,11 +1,21 @@
+@import 'mixins';
+
 .footer {
- display: flex;
- justify-content: center;
+  padding-block: 60px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 2fr;
+  // grid-template-rows: repeat(1fr, 2);
 
- border-top: 1px solid var(--borderColor);
-}
+  background-color: var(--footerColor);
 
-.footer__logo {
- font-weight: inherit;
- color: var(--primaryBgColor);
+  @include desktop {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  // & > span:not(:first-of-type) {
+  //   font-size: 26px;
+  //   color: white;
+  //   outline: 1px solid tomato;
+  // }
 }

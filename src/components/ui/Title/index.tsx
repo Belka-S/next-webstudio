@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { createElement, FC, PropsWithChildren } from 'react';
 
-import { FontWeight, Heading } from '@/components/Title/types';
+import { FontWeight, Heading } from '@/components/ui/Title/types';
 
 import styles from './Title.module.scss';
 

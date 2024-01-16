@@ -9,7 +9,7 @@ import SiteNav from './SiteNav';
 
 const Header = () => {
   return (
-    <header className={classNames(s.header, 'container')}>
+    <header className={classNames('container', s.header)}>
       <Link href={'/'}>
         <Logo className={s.header__logo} />
       </Link>

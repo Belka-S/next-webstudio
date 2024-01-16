@@ -1,30 +1,21 @@
 import Image from 'next/image';
 import React from 'react';
 
-import IconSvg from '@/components/IconSvg';
+import ContactLink from '@/components/ContactLink';
+import IconSvg from '@/components/ui/IconSvg';
 
 import s from './ContactInfo.module.scss';
 
 const ContactInfo = () => {
   return (
     <div className={s.contacts}>
-      <a
-        className={s.contacts__link}
-        href="mailto:info@devstudio.com"
-        aria-label="Mail"
-      >
+      <ContactLink className={s.contacts__link} type={'mail'}>
         <IconSvg className={s.contacts__icon} svgId="contactMail" />
-        info@devstudio.com
-      </a>
+      </ContactLink>
 
-      <a
-        className={s.contacts__link}
-        href="tel:+380961111111"
-        aria-label="Phone"
-      >
+      <ContactLink className={s.contacts__link} type={'phone'}>
         <IconSvg className={s.contacts__icon} svgId="contactPhone" />
-        +38 096 111 11 11
-      </a>
+      </ContactLink>
     </div>
   );
 };
