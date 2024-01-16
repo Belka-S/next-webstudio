@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 
+import s from './IconSvg.module.scss';
+
 type IconSvgProps = {
   svgId: string;
   width?: number;
@@ -15,11 +17,11 @@ const IconSvg = ({
 }: IconSvgProps) => {
   return (
     <svg
-      className={classNames('iconSvg', `${svgId}Svg`, className)}
+      className={classNames(s.iconSvg, `${svgId}Svg`, className)}
       width={width}
       height={height}
     >
-      <use href={`./svg/sprite.svg#${svgId}`} />
+      <use href={`./sprite.svg#${svgId}`} />
     </svg>
   );
 };

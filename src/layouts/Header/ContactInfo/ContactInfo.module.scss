@@ -62,14 +62,11 @@
   }
 
   &__icon {
+    margin-right: 10px;
+
     @include lessDesktop {
       height: 14px;
       width: 14px;
-      margin-right: 10px;
     }
-
-    margin-right: 10px;
-
-    fill: currentColor;
   }
 }
