@@ -1,27 +1,36 @@
 import { FC, ReactNode } from 'react';
 
-import { contacts } from './contacts';
+import { contactData } from './contactData';
 
 interface IContactLinkProps {
   className?: string;
-  type:
+  source:
+    | 'facebook'
+    | 'github'
+    | 'instagram'
+    | 'linkedin'
     | 'mail'
+    | 'map'
     | 'phone'
-    | 'whatsApp'
     | 'telegram'
-    | 'linkedIn'
-    | 'gitHub'
-    | 'map';
+    | 'twitter'
+    | 'whatsapp';
+  variant?: 'full' | 'short';
   children?: string | ReactNode;
 }
 
-const ContactLink: FC<IContactLinkProps> = ({ className, type, children }) => {
-  const { title, label, href } = contacts[type];
+const ContactLink: FC<IContactLinkProps> = ({
+  className,
+  source,
+  variant = 'full',
+  children,
+}) => {
+  const { title, label, href } = contactData[source];
 
   return (
     <a className={className} href={href} aria-label={title}>
       {children}
-      {label}
+      {variant === 'full' && label}
     </a>
   );
 };

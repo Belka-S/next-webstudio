@@ -12,9 +12,9 @@ const Address = () => {
         <Logo className={s.footer__logo} />
       </Link>
 
-      <ContactLink className={s.address__link} type={'map'} />
-      <ContactLink className={s.address__link} type={'mail'} />
-      <ContactLink className={s.address__link} type={'phone'} />
+      <ContactLink className={s.address__link} source={'map'} />
+      <ContactLink className={s.address__link} source={'mail'} />
+      <ContactLink className={s.address__link} source={'phone'} />
     </address>
   );
 };
