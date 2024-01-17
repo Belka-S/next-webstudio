@@ -1,5 +1,7 @@
-@import 'reset';
+@import './globals/reset';
 
-@import 'breaks';
-@import 'colors';
-@import 'spacings';
+@import './globals/global';
+
+@import './variables/breaks';
+@import './variables/colors';
+@import './variables/indents';

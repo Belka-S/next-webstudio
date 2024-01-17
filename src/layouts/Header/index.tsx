@@ -2,6 +2,8 @@ import classNames from 'classnames';
 import Link from 'next/link';
 
 import Logo from '@/components/Logo';
+import { Button } from '@/components/ui/Button';
+import IconSvg from '@/components/ui/IconSvg';
 
 import ContactInfo from './ContactInfo';
 import s from './Header.module.scss';
@@ -9,12 +11,19 @@ import SiteNav from './SiteNav';
 
 const Header = () => {
   return (
-    <header className={classNames('container', s.header)}>
-      <Link href={'/'}>
-        <Logo className={s.header__logo} />
-      </Link>
-      <SiteNav />
-      <ContactInfo />
+    <header className={s.header}>
+      <div className={classNames('container', s.header__wrap)}>
+        <Link href={'/'}>
+          <Logo className={s.header__logo} />
+        </Link>
+
+        <SiteNav />
+        <ContactInfo />
+
+        <Button className={s.header__button} size="m" variant="transparent">
+          <IconSvg svgId="burgerMenu" width={40} height={40} />
+        </Button>
+      </div>
     </header>
   );
 };

@@ -21,7 +21,7 @@ const IconSvg = ({
       width={width}
       height={height}
     >
-      <use href={`./sprite.svg#${svgId}`} />
+      <use href={`/icons/sprite.svg#${svgId}`} />
     </svg>
   );
 };

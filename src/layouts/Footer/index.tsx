@@ -1,12 +1,16 @@
 import classNames from 'classnames';
 
+import { Section } from '@/components/ui/Section';
+
 import Address from './Address';
 import s from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer className={classNames('container', s.footer)}>
-      <Address />
+    <footer className={s.footer}>
+      <div className={classNames('container', s.footer__wrap)}>
+        <Address />
+      </div>
     </footer>
   );
 };

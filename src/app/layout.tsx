@@ -30,9 +30,7 @@ const roboto = Roboto({
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
-      <body
-        className={classNames('layoutCss', roboto.variable, raleway.variable)}
-      >
+      <body className={classNames('layout', roboto.variable, raleway.variable)}>
         <Header />
         <main>{children}</main>
         <Footer />

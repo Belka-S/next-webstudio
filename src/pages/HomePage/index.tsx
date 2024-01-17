@@ -2,13 +2,13 @@ import classNames from 'classnames';
 
 import { Section } from '@/components/ui/Section';
 
-import s from './HomePage.module.scss';
+import Hero from './Hero';
 
 const HomePage = () => {
   return (
-    <Section className={classNames('container', s.home)}>
-      <h1>Home Page</h1>
-    </Section>
+    <>
+      <Hero />
+    </>
   );
 };
 

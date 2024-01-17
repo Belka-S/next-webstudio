@@ -1,0 +1,104 @@
+@import 'mixins';
+
+// title
+
+.h1 {
+  font-size: 24px;
+
+  @include tablet {
+    font-size: 30px;
+  }
+  @include desktop {
+    font-size: 44px;
+  }
+}
+.h2 {
+  font-size: 20px;
+
+  @include tablet {
+    font-size: 26px;
+  }
+  @include desktop {
+    font-size: 36px;
+  }
+}
+.h3 {
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
+}
+.h4 {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: 26px;
+  }
+}
+.h5 {
+  font-size: 14px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+  @include desktop {
+    font-size: 22px;
+  }
+}
+.h6 {
+  font-size: 12px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+}
+.p {
+  font-size: 12px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+// font-weight
+
+.thin {
+  font-weight: 100;
+}
+.extraLight {
+  font-weight: 200;
+}
+.light {
+  font-weight: 300;
+}
+.regular {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semiBold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.extraBold {
+  font-weight: 800;
+}
+.black {
+  font-weight: 900;
+}

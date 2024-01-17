@@ -12,8 +12,8 @@ const nextConfig = {
   sassOptions: {
     includePaths: [
       path.join(__dirname, 'src/styles'),
+      path.join(__dirname, 'src/styles/globals'),
       path.join(__dirname, 'src/styles/mixins'),
-      path.join(__dirname, 'src/styles/reset'),
       path.join(__dirname, 'src/styles/variables'),
     ],
   },

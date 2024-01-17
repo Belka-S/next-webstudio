@@ -1,11 +1,37 @@
+@import 'mixins';
+
 .header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header__wrap {
   display: flex;
   align-items: baseline;
 
-  border-bottom: 1px solid var(--borderColor);
+  @include lessTablet {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header__logo {
   font-weight: inherit;
-  color: var(--blackColor);
+  color: var(--black-color);
+}
+
+.header__button {
+  margin-left: auto;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  & svg {
+    transition: fill 250ms;
+  }
+  & svg:hover,
+  & svg:focus {
+    fill: var(--accent-color);
+  }
 }

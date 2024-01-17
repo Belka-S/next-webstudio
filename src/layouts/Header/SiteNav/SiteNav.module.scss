@@ -1,11 +1,11 @@
 @import 'mixins';
 
 .nav {
-  display: flex;
-  align-items: center;
+  display: none;
 
   @include tablet {
     display: flex;
+    align-items: center;
     margin-left: 87px;
   }
 
@@ -26,7 +26,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--primaryTextColor);
+  color: var(--primary-text-color);
   transition: color 250ms;
 
   &:not(:last-child) {
@@ -44,7 +44,7 @@
     content: '';
     border-radius: 2px;
 
-    background-color: var(--accentColor);
+    background-color: var(--accent-color);
 
     transition: width 250ms;
   }
@@ -57,7 +57,7 @@
 }
 
 .active {
-  color: var(--hoverColor);
+  color: var(--hover-color);
 
   &::after {
     position: absolute;
@@ -70,7 +70,7 @@
     content: '';
     border-radius: 2px;
 
-    background-color: var(--accentColor);
+    background-color: var(--accent-color);
 
     transition: width 250ms;
   }

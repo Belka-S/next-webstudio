@@ -1,6 +1,6 @@
 .footer__logo {
   font-weight: 500;
-  color: var(--primaryBgColor);
+  color: var(--primary-bg-color);
 }
 
 .address {
@@ -28,11 +28,11 @@
 
   &:nth-of-type(2) {
     margin-top: 20px;
-    color: var(--primaryBgColor);
+    color: var(--primary-bg-color);
   }
 
   &:hover,
   &:focus {
-    color: var(--accentColor);
+    color: var(--accent-color);
   }
 }
