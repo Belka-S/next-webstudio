@@ -16,7 +16,7 @@
       var(--gradient-color),
       var(--gradient-color)
     ),
-    url(./img/hero-mob-1x.jpg);
+    url(../../../assets/img/hero-mob-1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,7 +26,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url(./img/hero-mob-2x.jpg);
+      url(../../../assets/img/hero-mob-2x.jpg);
   }
 
   @include tablet {
@@ -35,7 +35,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url(./img/hero-tab-1x.jpg);
+      url(../../../assets/img/hero-tab-1x.jpg);
 
     @include retina {
       background-image: linear-gradient(
@@ -43,7 +43,7 @@
           var(--gradient-color),
           var(--gradient-color)
         ),
-        url(./img/hero-tab-2x.jpg);
+        url(../../../assets/img/hero-tab-2x.jpg);
     }
   }
 
@@ -55,7 +55,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url(./img/hero-desk-1x.jpg);
+      url(../../../assets/img/hero-desk-1x.jpg);
 
     @include retina {
       background-image: linear-gradient(
@@ -63,7 +63,7 @@
           var(--gradient-color),
           var(--gradient-color)
         ),
-        url(./img/hero-desk-2x.jpg);
+        url(../../../assets/img/hero-desk-2x.jpg);
     }
   }
 }

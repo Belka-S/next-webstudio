@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sprite": "npx svg-symbol-sprite -p '' -i ./src/assets/svg -o ./public/icons/sprite.svg"
+    "sprite": "npx svg-symbol-sprite -p '' -i ./src/assets/svg -o ./public/sprite.svg"
   },
   "dependencies": {
     "classnames": "^2.5.1",
