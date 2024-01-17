@@ -33,17 +33,29 @@
 // variant
 
 .default {
-  border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   color: var(--white-color);
+  transition: background-color 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
 }
 
 .outlined {
   border: 1px solid var(--border-color);
   color: var(--black-color);
+  transition: background-color 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--border-color);
+  }
 }
 
 .transparent {
   border: none;
   color: var(--black-color);
+  transition: background-color 250ms;
 }

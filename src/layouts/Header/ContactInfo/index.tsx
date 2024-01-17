@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 import ContactLink from '@/components/ContactLink';
@@ -8,13 +7,13 @@ import s from './ContactInfo.module.scss';
 
 const ContactInfo = () => {
   return (
-    <div className={s.contacts}>
-      <ContactLink className={s.contacts__link} type={'mail'}>
-        <IconSvg className={s.contacts__icon} svgId="contactMail" />
+    <div className={s.contact}>
+      <ContactLink className={s.contact__link} type={'mail'}>
+        <IconSvg className={s.contact__icon} svgId="contact-mail" />
       </ContactLink>
 
-      <ContactLink className={s.contacts__link} type={'phone'}>
-        <IconSvg className={s.contacts__icon} svgId="contactPhone" />
+      <ContactLink className={s.contact__link} type={'phone'}>
+        <IconSvg className={s.contact__icon} svgId="contact-phone" />
       </ContactLink>
     </div>
   );

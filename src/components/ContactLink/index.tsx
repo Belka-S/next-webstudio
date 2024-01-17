@@ -1,7 +1,5 @@
-import classNames from 'classnames';
 import { FC, ReactNode } from 'react';
 
-import s from './ContactLink.module.scss';
 import { contacts } from './contacts';
 
 interface IContactLinkProps {
@@ -21,11 +19,7 @@ const ContactLink: FC<IContactLinkProps> = ({ className, type, children }) => {
   const { title, label, href } = contacts[type];
 
   return (
-    <a
-      className={classNames(s[`${title}Contact`], className)}
-      href={href}
-      aria-label={title}
-    >
+    <a className={className} href={href} aria-label={title}>
       {children}
       {label}
     </a>

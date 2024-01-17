@@ -21,7 +21,7 @@ const Header = () => {
         <ContactInfo />
 
         <Button className={s.header__button} size="m" variant="transparent">
-          <IconSvg svgId="burgerMenu" width={40} height={40} />
+          <IconSvg svgId="modal-burger" width={40} height={40} />
         </Button>
       </div>
     </header>

@@ -11,13 +11,13 @@ type IconSvgProps = {
 
 const IconSvg = ({
   svgId,
-  width = 16,
-  height = 16,
+  width = 20,
+  height = 20,
   className = '',
 }: IconSvgProps) => {
   return (
     <svg
-      className={classNames(s.iconSvg, `${svgId}Svg`, className)}
+      className={classNames(s.iconSvg, className)}
       width={width}
       height={height}
     >
