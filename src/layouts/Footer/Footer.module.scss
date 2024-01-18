@@ -14,10 +14,21 @@
 
 .footer__wrap {
   display: flex;
-  gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+
+  text-align: center;
   align-items: baseline;
 
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 2fr;
-  // grid-template-rows: repeat(1fr, 2);
+  @include tablet {
+    gap: 0;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    gap: 100px;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
 }
