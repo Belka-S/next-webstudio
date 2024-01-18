@@ -1,7 +1,7 @@
 import IconSvg from '@/components/ui/IconSvg';
 import { Section } from '@/components/ui/Section';
-import { advantageData } from '@/utils/constants/advantageData';
 
+import data from './advantages.json';
 import s from './Advantages.module.scss';
 
 const Advantages = () => {
@@ -9,7 +9,7 @@ const Advantages = () => {
     <Section className="container">
       <h2 className="hidden">Our advantages</h2>
       <ul className={s.advantages}>
-        {advantageData.map(el => (
+        {data.map(el => (
           <li className={s.advantages__item} key={el.svgId}>
             <div className={s.advantages__wrap}>
               <IconSvg svgId={el.svgId} width={70} height={70} />
