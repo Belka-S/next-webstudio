@@ -1,8 +1,18 @@
 import ContactLink from '@/components/ContactLink';
 import IconSvg from '@/components/ui/IconSvg';
 import { Typo } from '@/components/ui/Typo';
+import { IContactData } from '@/utils/constants/contactData';
 
 import s from './Socials.module.scss';
+
+const socials: Partial<keyof IContactData>[] = [
+  'instagram',
+  'twitter',
+  'facebook',
+  'linkedin',
+];
+
+const socialsData = '123';
 
 const Socials = () => {
   return (
@@ -11,37 +21,16 @@ const Socials = () => {
         Join
       </Typo>
       <div className={s.socials__wrap}>
-        <ContactLink
-          className={s.socials__link}
-          variant="short"
-          source="instagram"
-        >
-          <IconSvg svgId="contact-instagram" width={28} height={28} />
-        </ContactLink>
-
-        <ContactLink
-          className={s.socials__link}
-          variant="short"
-          source="twitter"
-        >
-          <IconSvg svgId="contact-twitter" width={28} height={28} />
-        </ContactLink>
-
-        <ContactLink
-          className={s.socials__link}
-          variant="short"
-          source="facebook"
-        >
-          <IconSvg svgId="contact-facebook" width={28} height={28} />
-        </ContactLink>
-
-        <ContactLink
-          className={s.socials__link}
-          variant="short"
-          source="linkedin"
-        >
-          <IconSvg svgId="contact-linkedin" width={28} height={28} />
-        </ContactLink>
+        {socials.map(el => (
+          <ContactLink
+            key={el}
+            className={s.socials__link}
+            variant="short"
+            source={el}
+          >
+            <IconSvg svgId={`contact-${el}`} width={28} height={28} />
+          </ContactLink>
+        ))}
       </div>
     </div>
   );

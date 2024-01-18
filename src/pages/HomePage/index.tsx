@@ -1,13 +1,11 @@
-import classNames from 'classnames';
-
-import { Section } from '@/components/ui/Section';
-
+import Advantages from './Advantages';
 import Hero from './Hero';
 
 const HomePage = () => {
   return (
     <>
       <Hero />
+      <Advantages />
     </>
   );
 };

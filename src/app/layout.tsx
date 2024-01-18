@@ -1,4 +1,4 @@
-import './globals.scss';
+import '../styles/styles.scss';
 
 import classNames from 'classnames';
 import type { Metadata } from 'next';

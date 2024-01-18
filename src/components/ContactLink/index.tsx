@@ -1,20 +1,10 @@
 import { FC, ReactNode } from 'react';
 
-import { contactData } from './contactData';
+import { contactData, IContactData } from '@/utils/constants/contactData';
 
 interface IContactLinkProps {
   className?: string;
-  source:
-    | 'facebook'
-    | 'github'
-    | 'instagram'
-    | 'linkedin'
-    | 'mail'
-    | 'map'
-    | 'phone'
-    | 'telegram'
-    | 'twitter'
-    | 'whatsapp';
+  source: keyof IContactData;
   variant?: 'full' | 'short';
   children?: string | ReactNode;
 }
