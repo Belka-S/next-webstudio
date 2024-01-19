@@ -1,3 +1,4 @@
+import AboutUs from './AboutUs';
 import Advantages from './Advantages';
 import Hero from './Hero';
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <Hero />
       <Advantages />
+      <AboutUs />
     </>
   );
 };

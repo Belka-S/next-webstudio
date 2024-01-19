@@ -1,5 +1,6 @@
 import IconSvg from '@/components/ui/IconSvg';
 import { Section } from '@/components/ui/Section';
+import { Typo } from '@/components/ui/Typo';
 
 import data from './advantages.json';
 import s from './Advantages.module.scss';
@@ -14,8 +15,12 @@ const Advantages = () => {
             <div className={s.advantages__wrap}>
               <IconSvg svgId={el.svgId} width={70} height={70} />
             </div>
-            <h3 className={s.advantages__title}>{el.title}</h3>
-            <p className={s.advantages__value}>{el.value}</p>
+            <Typo className={s.advantages__title} el={'h6'} fontWeight={700}>
+              {el.title}
+            </Typo>
+            <Typo className={s.advantages__text} el={'p'} fontWeight={400}>
+              {el.value}
+            </Typo>
           </li>
         ))}
       </ul>

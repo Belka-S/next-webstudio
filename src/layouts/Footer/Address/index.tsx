@@ -2,8 +2,11 @@ import Link from 'next/link';
 
 import ContactLink from '@/components/ContactLink';
 import Logo from '@/components/Logo';
+import { IContactData } from '@/utils/constants/contactData';
 
 import s from './Address.module.scss';
+
+const contacts: Partial<keyof IContactData>[] = ['map', 'mail', 'phone'];
 
 const Address = () => {
   return (
@@ -12,9 +15,9 @@ const Address = () => {
         <Logo className={s.footer__logo} />
       </Link>
 
-      <ContactLink className={s.address__link} source={'map'} />
-      <ContactLink className={s.address__link} source={'mail'} />
-      <ContactLink className={s.address__link} source={'phone'} />
+      {contacts.map(el => (
+        <ContactLink className={s.address__link} source={el} key={el} />
+      ))}
     </address>
   );
 };

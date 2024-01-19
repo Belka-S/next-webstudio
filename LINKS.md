@@ -36,7 +36,6 @@
 - **[svg-symbol-sprite]**https://github.com/scriptex/svg-symbol-sprite
 - **[]**
 - **[]**
-- **[]**
 - **[zustand]**https://github.com/pmndrs/zustand
 - **[redux]**https://redux.js.org
 - **[react-redux]**https://react-redux.js.org
@@ -44,10 +43,11 @@
 - **[redux-persist]**https://github.com/rt2zz/redux-persist
 - **[concurrently]**https://www.npmjs.com/package/concurrently
 - **[WebSpeechAPI]**https://developer.mozilla.org/ru/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API
+- **[lint-images]**https://ausi.github.io/respimagelint/
+- **[@svgr/webpack]**https://www.npmjs.com/package/@svgr/webpack
 
 - **[multer-storage-cloudinary]**https://www.npmjs.com/package/multer-storage-cloudinary
 - **[chardet]**https://www.npmjs.com/package/chardet
-- **[]**
 - **[]**
 - **[]**
 - **[]**

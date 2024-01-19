@@ -1,4 +1,4 @@
-@import 'breakpoints';
+@import '../globals/breakpoints';
 
 @mixin mobile() {
   @media (width >= $screen-s) {

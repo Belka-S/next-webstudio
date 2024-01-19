@@ -2,25 +2,45 @@
 const path = require('path');
 
 const nextConfig = {
-  output: 'export',
-
+  // output: 'export',
   images: {
-    unoptimized: true,
-    domains: ['images.unsplash.com'],
-  },
-
-  sassOptions: {
-    includePaths: [
-      path.join(__dirname, 'src/styles'),
-      path.join(__dirname, 'src/styles/globals'),
-      path.join(__dirname, 'src/styles/mixins'),
-      path.join(__dirname, 'src/styles/variables'),
+    unoptimized: false,
+    domains: [
+      'images.unsplash.com',
+      'res.cloudinary.com',
+      'img.etimg.com',
+      'assets.vogue.com',
+      'm.media-amazon.com',
+      'upload.wikimedia.org',
+    ],
+    deviceSizes: [320, 480, 768, 1080, 1200, 1440, 1920, 2048, 3840],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'belka-s.github.io/',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
     ],
   },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src/styles')],
+  },
+
+  reactStrictMode: false,
 
   webpack(config) {
+    config.resolve.fallback = {
+      fs: false,
+      net: false,
+      dns: false,
+      child_process: false,
+      tls: false,
+    };
     config.module.rules.push({
-      test: /\.svg$/i,
+      test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
 

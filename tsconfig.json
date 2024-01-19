@@ -20,15 +20,23 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@/assets/*": ["src/assets/*"],
       "@/components/*": ["src/components/*"],
       "@/layouts/*": ["src/layouts/*"],
       "@/pages/*": ["src/pages/*"],
       "@/styles/*": ["src/styles/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/img/*": ["assets/img/*"],
-      "@/svg/*": ["assets/svg/*"]
+      "@/utils/*": ["src/utils/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/utils/constants/qwe.js",
+    "src/utils/helpers/getDirConnent.js",
+    "src/utils/helpers/getDirNames.js",
+    "src/utils/helpers/getFiles.js"
+  ],
   "exclude": ["node_modules"]
 }
