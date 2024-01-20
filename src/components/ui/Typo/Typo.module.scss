@@ -6,69 +6,63 @@
   font-size: 24px;
 
   @include tablet {
-    font-size: 30px;
+    font-size: 32px;
   }
   @include desktop {
     font-size: 44px;
   }
 }
 .h2 {
-  font-size: 20px;
+  font-size: 24px;
 
   @include tablet {
-    font-size: 26px;
+    font-size: 30px;
   }
   @include desktop {
     font-size: 36px;
   }
 }
 .h3 {
-  font-size: 18px;
+  font-size: 20px;
 
   @include tablet {
-    font-size: 24px;
+    font-size: 26px;
   }
   @include desktop {
     font-size: 30px;
   }
 }
 .h4 {
-  font-size: 16px;
+  font-size: 18px;
 
   @include tablet {
     font-size: 22px;
   }
   @include desktop {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .h5 {
-  font-size: 14px;
+  font-size: 16px;
 
   @include tablet {
     font-size: 18px;
   }
   @include desktop {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .h6 {
-  font-size: 12px;
+  font-size: 14px;
 
   @include tablet {
-    font-size: 14px;
-  }
-  @include desktop {
     font-size: 16px;
   }
 }
 .p {
-  font-size: 12px;
+  font-size: 14px;
 
   @include tablet {
-    font-size: 14px;
-  }
-  @include desktop {
     font-size: 16px;
   }
 }

@@ -12,8 +12,6 @@ const socials: Partial<keyof IContactData>[] = [
   'linkedin',
 ];
 
-const socialsData = '123';
-
 const Socials = () => {
   return (
     <div className={s.socials}>
@@ -27,6 +25,7 @@ const Socials = () => {
             className={s.socials__link}
             variant="short"
             source={el}
+            target="_blank"
           >
             <IconSvg svgId={`contact-${el}`} width={28} height={28} />
           </ContactLink>

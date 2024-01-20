@@ -1,17 +1,18 @@
 @import 'mixins';
 
 .aboutus {
-  padding-top: 0;
+  padding-top: 0 !important;
 
   @include lessDesktop {
     display: none;
   }
 }
 
-.aboutus__titel {
+.aboutus__title {
   margin-bottom: 50px;
   line-height: 1.17;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .aboutus__list {

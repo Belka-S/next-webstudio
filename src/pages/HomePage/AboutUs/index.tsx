@@ -10,7 +10,7 @@ import s from './AboutUs.module.scss';
 const AboutUs = () => {
   return (
     <Section className={classNames(s.aboutus, 'container')}>
-      <Typo className={s.aboutus__titel} el="h2" fontWeight={700}>
+      <Typo className={s.aboutus__title} el="h2" fontWeight={700}>
         What do we do
       </Typo>
 
