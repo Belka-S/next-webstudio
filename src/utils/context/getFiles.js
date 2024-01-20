@@ -11,5 +11,7 @@ export const getFiles = context => {
     arr.push({ id, name, file });
   });
 
+  arr.filter(el => !el.name.includes('src/'));
+
   return arr;
 };
