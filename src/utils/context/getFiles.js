@@ -1,5 +1,5 @@
 export const getFiles = context => {
-  const arr = [];
+  let arr = [];
 
   context.keys().forEach((item, id) => {
     const name = item
@@ -11,7 +11,7 @@ export const getFiles = context => {
     arr.push({ id, name, file });
   });
 
-  arr.filter(el => !el.name.includes('src/'));
+  arr = arr.filter(el => !el.name.includes('src/'));
 
   return arr;
 };
