@@ -16,7 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  gap: var(--indent-l);
 
   text-align: center;
   align-items: baseline;
@@ -27,7 +27,7 @@
 
   @include desktop {
     justify-content: space-between;
-    gap: 100px;
+    gap: var(--indent-xxl);
     flex-wrap: nowrap;
     text-align: left;
   }
