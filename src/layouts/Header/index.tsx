@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Logo from '@/components/Logo';
 import { Button } from '@/components/ui/Button';
-import IconSvg from '@/components/ui/IconSvg';
+import SvgIcon from '@/components/ui/SvgIcon';
 
 import ContactInfo from './ContactInfo';
 import s from './Header.module.scss';
@@ -21,7 +21,7 @@ const Header = () => {
         <ContactInfo />
 
         <Button className={s.header__button} size="m" variant="transparent">
-          <IconSvg svgId="modal-burger" width={40} height={40} />
+          <SvgIcon id="modal-burger" width={40} height={40} />
         </Button>
       </div>
     </header>

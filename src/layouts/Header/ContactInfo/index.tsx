@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ContactLink from '@/components/ContactLink';
-import IconSvg from '@/components/ui/IconSvg';
+import SvgIcon from '@/components/ui/SvgIcon';
 import { IContactData } from '@/utils/constants/contactData';
 
 import s from './ContactInfo.module.scss';
@@ -13,7 +13,7 @@ const ContactInfo = () => {
     <div className={s.contact}>
       {contacts.map(el => (
         <ContactLink className={s.contact__link} source={el} key={el}>
-          <IconSvg className={s.contact__icon} svgId={`contact-${el}`} />
+          <SvgIcon id={`contact-${el}`} className={s.contact__icon} />
         </ContactLink>
       ))}
     </div>

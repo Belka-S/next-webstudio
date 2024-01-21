@@ -1,5 +1,5 @@
 import ContactLink from '@/components/ContactLink';
-import IconSvg from '@/components/ui/IconSvg';
+import SvgIcon from '@/components/ui/SvgIcon';
 import { Typo } from '@/components/ui/Typo';
 import { IContactData } from '@/utils/constants/contactData';
 
@@ -27,7 +27,7 @@ const Socials = () => {
             source={el}
             target="_blank"
           >
-            <IconSvg svgId={`contact-${el}`} width={28} height={28} />
+            <SvgIcon id={`contact-${el}`} width={28} height={28} />
           </ContactLink>
         ))}
       </div>

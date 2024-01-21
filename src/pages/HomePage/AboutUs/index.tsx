@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <Section className={classNames(s.aboutus, 'container')}>
       <Typo className={s.aboutus__title} el="h2" fontWeight={700}>
-        What do we do
+        About Us
       </Typo>
 
       <ul className={s.aboutus__list}>

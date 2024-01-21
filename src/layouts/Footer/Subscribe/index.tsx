@@ -3,7 +3,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { Button } from '@/components/ui/Button';
-import IconSvg from '@/components/ui/IconSvg';
+import SvgIcon from '@/components/ui/SvgIcon';
 import { Typo } from '@/components/ui/Typo';
 
 import s from './Subscribe.module.scss';
@@ -39,7 +39,7 @@ const Subscribe = () => {
           size="m"
           label="Subscribe"
         >
-          <IconSvg svgId="contact-telegram" width={32} height={32} />
+          <SvgIcon id="contact-telegram" width={32} height={32} />
         </Button>
       </form>
     </div>

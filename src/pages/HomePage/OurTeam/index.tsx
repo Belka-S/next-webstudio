@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 import ContactLink from '@/components/ContactLink';
-import IconSvg from '@/components/ui/IconSvg';
 import { Section } from '@/components/ui/Section';
+import SvgIcon from '@/components/ui/SvgIcon';
 import { Typo } from '@/components/ui/Typo';
 import { IContactData } from '@/utils/constants/contactData';
 import images from '@/utils/context/ourteamContext';
@@ -43,20 +43,20 @@ const OurTeam = () => (
               </Typo>
 
               <div className={s.socials__wrap}>
-                {socials.map(soc => (
+                {socials.map(socials => (
                   <ContactLink
-                    key={soc}
+                    key={socials}
                     className={s.socials__link}
                     variant="short"
-                    source={soc}
+                    source={socials}
                     href={
                       Object.entries(data[img.id])
-                        .filter(el => el[0] === soc)
+                        .filter(el => el[0] === socials)
                         .flatMap(el => el)[1]
                     }
                     target="_blank"
                   >
-                    <IconSvg svgId={`contact-${soc}`} width={28} height={28} />
+                    <SvgIcon id={`contact-${socials}`} width={28} height={28} />
                   </ContactLink>
                 ))}
               </div>
