@@ -6,8 +6,6 @@
 }
 
 .ourteam__title {
-  margin-bottom: var(--indent-l);
-  line-height: 1.17;
   text-transform: capitalize;
 }
 
@@ -40,13 +38,11 @@
 
 .ourteam__member {
   margin-bottom: 10px;
-
   line-height: 1.19;
 }
 
 .ourteam__position {
   margin-bottom: 16px;
-
   line-height: 1.19;
 
   color: var(--secondary-text-color);

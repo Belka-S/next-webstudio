@@ -1,5 +1,6 @@
 import { Section } from '@/components/ui/Section';
 import SvgIcon from '@/components/ui/SvgIcon';
+import { Typo } from '@/components/ui/Typo';
 
 import data from './customers.json';
 import s from './Customers.module.scss';
@@ -7,7 +8,9 @@ import s from './Customers.module.scss';
 const Customers = () => {
   return (
     <Section className="container">
-      <h2 className={s.customers__title}>Regular customers</h2>
+      <Typo className={s.customers__title} el="h2" fontWeight={700}>
+        Regular customers
+      </Typo>
       <ul className={s.customers__list}>
         {data.map(el => (
           <li className={s.customers__item} key={el.svgId}>

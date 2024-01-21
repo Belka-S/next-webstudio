@@ -3,22 +3,28 @@
 // title
 
 .h1 {
-  font-size: 24px;
+  margin-bottom: var(--indent-m);
+  font-size: 26px;
 
   @include tablet {
+    margin-bottom: var(--indent-l);
     font-size: 32px;
   }
   @include desktop {
+    margin-bottom: var(--indent-xl);
     font-size: 44px;
   }
 }
 .h2 {
   font-size: 24px;
+  margin-bottom: var(--indent-m);
 
   @include tablet {
+    margin-bottom: var(--indent-l);
     font-size: 30px;
   }
   @include desktop {
+    margin-bottom: var(--indent-xl);
     font-size: 36px;
   }
 }

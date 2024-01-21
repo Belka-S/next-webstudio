@@ -12,7 +12,7 @@ import s from './Hero.module.scss';
 const Hero = () => {
   return (
     <Section className={classNames('container', s.hero)}>
-      <Typo className={s.hero__title} el="h1" fontWeight={700}>
+      <Typo className={s.hero__title} el="h1" fontWeight={900}>
         Effective solutions for your business
       </Typo>
       <Button
