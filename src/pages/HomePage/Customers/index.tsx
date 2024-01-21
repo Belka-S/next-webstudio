@@ -14,8 +14,8 @@ const Customers = () => {
             <a
               className={s.customers__link}
               href={el.href}
-              target="_blank"
               rel="noopener noreferrer nofollow"
+              target="_blank"
             >
               <SvgIcon id={el.svgId} width={110} height={60} />
             </a>

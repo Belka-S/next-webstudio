@@ -1,7 +1,7 @@
 import ContactPage from '@/pages/ContactPage';
 
-const Contact = () => {
+const Contacts = () => {
   return <ContactPage />;
 };
 
-export default Contact;
+export default Contacts;

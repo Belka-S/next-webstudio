@@ -21,8 +21,8 @@ const SiteNav = () => {
       <Link className={setClassName('/portfolio')} href={'/portfolio'}>
         Portfolio
       </Link>
-      <Link className={setClassName('/contact')} href={'/contact'}>
-        Contact
+      <Link className={setClassName('/contacts')} href={'/contacts'}>
+        Contacts
       </Link>
     </nav>
   );
