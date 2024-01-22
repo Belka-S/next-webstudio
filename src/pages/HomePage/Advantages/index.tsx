@@ -15,10 +15,10 @@ const Advantages = () => {
             <div className={s.advantages__wrap}>
               <SvgIcon id={el.svgId} width={70} height={70} />
             </div>
-            <Typo className={s.advantages__title} el={'h6'} fontWeight={700}>
+            <Typo el="h6" className={s.advantages__title}>
               {el.title}
             </Typo>
-            <Typo className={s.advantages__text} el={'p'} fontWeight={400}>
+            <Typo el="p" fontWeight={400} className={s.advantages__text}>
               {el.value}
             </Typo>
           </li>

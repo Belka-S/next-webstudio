@@ -20,13 +20,13 @@ export type Element = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 export type FontWeight = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
 
 interface ITypoProps extends PropsWithChildren {
-  className?: string;
   el: Element;
-  fontWeight: FontWeight;
+  fontWeight?: FontWeight;
+  className?: string;
 }
 
 export const Typo: FC<ITypoProps> = props => {
-  const { className = '', el, fontWeight, children } = props;
+  const { className = '', el, fontWeight = 700, children } = props;
 
   return createElement(
     el,

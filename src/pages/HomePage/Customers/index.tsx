@@ -8,7 +8,7 @@ import s from './Customers.module.scss';
 const Customers = () => {
   return (
     <Section className="container">
-      <Typo className={s.customers__title} el="h2" fontWeight={700}>
+      <Typo el="h2" className={s.customers__title}>
         Regular customers
       </Typo>
       <ul className={s.customers__list}>

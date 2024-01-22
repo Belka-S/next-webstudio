@@ -21,9 +21,7 @@ const Subscribe = () => {
 
   return (
     <div className={s.subscribe}>
-      <Typo el="p" fontWeight={700}>
-        Subscribe
-      </Typo>
+      <Typo el="p">Subscribe</Typo>
 
       <form className={s.subscribe__form} onSubmit={handleSubmit(onSubmit)}>
         <input

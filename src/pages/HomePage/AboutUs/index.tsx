@@ -10,14 +10,14 @@ import s from './AboutUs.module.scss';
 const AboutUs = () => {
   return (
     <Section className={classNames(s.aboutus, 'container')}>
-      <Typo className={s.aboutus__title} el="h2" fontWeight={700}>
+      <Typo el="h2" className={s.aboutus__title}>
         About Us
       </Typo>
 
       <ul className={s.aboutus__list}>
         {images.map(el => (
           <li className={s.aboutus__item} key={el.id}>
-            <Typo className={s.aboutus__text} el="p" fontWeight={700}>
+            <Typo el="p" className={s.aboutus__text}>
               {el.name.replace('-', ' ')}
             </Typo>
 

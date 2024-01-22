@@ -20,7 +20,7 @@ const socials: Partial<keyof IContactData>[] = [
 const OurTeam = () => (
   <Section className={s.ourteam}>
     <div className="container">
-      <Typo className={s.ourteam__title} el="h2" fontWeight={700}>
+      <Typo el="h2" className={s.ourteam__title}>
         Our team
       </Typo>
       {/* image */}
@@ -34,10 +34,10 @@ const OurTeam = () => (
             />
             {/* socials */}
             <div className={s.ourteam__wrap}>
-              <Typo className={s.ourteam__member} el="h5" fontWeight={500}>
+              <Typo el="h5" fontWeight={500} className={s.ourteam__member}>
                 {data[img.id].name}
               </Typo>
-              <Typo className={s.ourteam__position} el="p" fontWeight={400}>
+              <Typo el="p" fontWeight={400} className={s.ourteam__position}>
                 {data[img.id].position}
               </Typo>
 

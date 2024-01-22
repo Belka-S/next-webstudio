@@ -15,9 +15,7 @@ const socials: Partial<keyof IContactData>[] = [
 const Socials = () => {
   return (
     <div className={s.socials}>
-      <Typo el="p" fontWeight={700}>
-        Join
-      </Typo>
+      <Typo el="p">Join</Typo>
       <div className={s.socials__wrap}>
         {socials.map(el => (
           <ContactLink
