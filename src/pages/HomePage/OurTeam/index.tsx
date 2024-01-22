@@ -14,8 +14,7 @@ const socials: Partial<keyof IContactData>[] = [
   'whatsapp',
   'linkedin',
   'facebook',
-  'twitter',
-  'instagram',
+  'twitter', // 'instagram',
 ];
 
 const OurTeam = () => (
