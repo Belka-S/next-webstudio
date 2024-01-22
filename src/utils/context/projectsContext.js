@@ -1,7 +1,7 @@
 import { getFiles } from './getFiles';
 
 const context = require.context(
-  '../../../src/assets/img/aboutus',
+  '../../../src/assets/img/projects',
   true,
   /\.(png|jpe?g|svg)$/,
 );

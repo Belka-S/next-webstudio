@@ -36,8 +36,7 @@
   color: var(--icon-color);
   transition: color 250ms, border-color 250ms;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
   }

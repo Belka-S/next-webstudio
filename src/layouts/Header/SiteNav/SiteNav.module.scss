@@ -49,8 +49,7 @@
     transition: width 250ms;
   }
 
-  &:hover::after,
-  &:focus::after {
+  &:hover::after {
     left: 0;
     width: 100%;
   }

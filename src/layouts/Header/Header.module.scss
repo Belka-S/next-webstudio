@@ -30,8 +30,7 @@
   & svg {
     transition: fill 250ms;
   }
-  & svg:hover,
-  & svg:focus {
+  & svg:hover {
     fill: var(--accent-color);
   }
 }
