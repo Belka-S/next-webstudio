@@ -12,17 +12,18 @@
     "href": "https://belka-s.github.io/html-css-goit-team/"
   },
   {
-    "name": "prime",
-    "type": "marketing",
-    "value": "MERN app for storing contacts. It uses REST API as a backend and MongoDB for data storage, provides authorization via email or Google, password recovery, email veriﬁcation.",
-    "href": "https://belka-s.github.io/mern-contactbook/"
-  },
-  {
     "name": "boxes",
     "type": "application",
     "value": "Movie search application. It uses TMDB API as a backend and Firebase API for data storage, provides authorization, pagination, light/dark theme, movie trailer view.",
     "href": "https://belka-s.github.io/js-goit-team/"
   },
+  {
+    "name": "prime",
+    "type": "marketing",
+    "value": "MERN app for storing contacts. It uses REST API as a backend and MongoDB for data storage, provides authorization via email or Google, password recovery, email veriﬁcation.",
+    "href": "https://belka-s.github.io/mern-contactbook/"
+  },
+
   {
     "name": "inspiration-has-no-borders",
     "type": "website",
