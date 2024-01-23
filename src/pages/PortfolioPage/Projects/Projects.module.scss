@@ -106,7 +106,7 @@
 
   color: var(--primary-bg-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms;
+  transition: transform 500ms;
 
   .projects__link:hover & {
     transform: translateY(0);
