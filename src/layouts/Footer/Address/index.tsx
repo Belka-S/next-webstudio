@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import ContactLink from '@/components/ContactLink';
+import ContactLink from '@/components/ui/ContactLink';
 import Logo from '@/components/Logo';
 import { IContactData } from '@/utils/constants/contactData';
 

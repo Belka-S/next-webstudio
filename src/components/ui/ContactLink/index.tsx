@@ -2,13 +2,15 @@ import { FC, ReactNode } from 'react';
 
 import { contactData, IContactData } from '@/utils/constants/contactData';
 
+export type ContactLinkVariant = 'short' | 'full' | 'title';
+
 interface IContactLinkProps {
   className?: string;
   source: keyof IContactData;
-  variant?: 'full' | 'short';
+  variant?: ContactLinkVariant;
   href?: string;
   target?: '_blank';
-  children?: string | ReactNode;
+  children?: ReactNode;
 }
 
 const ContactLink: FC<IContactLinkProps> = ({
@@ -30,6 +32,7 @@ const ContactLink: FC<IContactLinkProps> = ({
       rel="noopener noreferrer nofollow"
     >
       {children}
+      {variant === 'title' && title}
       {variant === 'full' && label}
     </a>
   );

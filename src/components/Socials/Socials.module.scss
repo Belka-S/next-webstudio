@@ -1,20 +1,8 @@
 @import 'mixins';
 
+// default styles
+
 .socials {
-  width: 100%;
-  text-transform: uppercase;
-  color: var(--white-color);
-
-  @include tablet {
-    width: 50%;
-  }
-
-  @include desktop {
-    width: fit-content;
-  }
-}
-
-.socials__wrap {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -43,3 +31,5 @@
     fill: var(--white-color);
   }
 }
+
+// BurgerMenu styles

@@ -56,21 +56,23 @@
 }
 
 .active {
-  color: var(--hover-color);
+  color: var(--hover-color) !important;
 
-  &::after {
-    position: absolute;
-    bottom: 26px;
-    right: 0;
+  @include tablet {
+    &::after {
+      position: absolute;
+      bottom: 26px;
+      right: 0;
 
-    width: 100%;
-    height: 4px;
-    display: block;
-    content: '';
-    border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      display: block;
+      content: '';
+      border-radius: 2px;
 
-    background-color: var(--accent-color);
+      background-color: var(--accent-color);
 
-    transition: width 250ms;
+      transition: width 250ms;
+    }
   }
 }

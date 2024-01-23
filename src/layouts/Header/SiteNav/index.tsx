@@ -3,15 +3,23 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
+import { FC } from 'react';
 
 import s from './SiteNav.module.scss';
 
-const SiteNav = () => {
+interface ISiteNavProps {
+  styleNav?: string;
+  styleLink?: string;
+}
+
+const SiteNav: FC<ISiteNavProps> = ({ styleNav, styleLink }) => {
   const pathname = usePathname();
 
   const setClassName = (path: string) => {
-    return classNames(s.nav__link, pathname === path && s.active);
+    return classNames(
+      styleLink ? styleLink : s.nav__link,
+      pathname === path && s.active,
+    );
   };
 
   // ContactPage height
@@ -23,7 +31,7 @@ const SiteNav = () => {
   }
 
   return (
-    <nav className={s.nav}>
+    <nav className={styleNav ? styleNav : s.nav}>
       <Link className={setClassName('/')} href={'/'}>
         Studio
       </Link>

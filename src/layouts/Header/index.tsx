@@ -1,15 +1,21 @@
+'use client';
+
 import classNames from 'classnames';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import Logo from '@/components/Logo';
 import { Button } from '@/components/ui/Button';
 import SvgIcon from '@/components/ui/SvgIcon';
 
+import BurgerMenu from './BurgerMenu';
 import ContactInfo from './ContactInfo';
 import s from './Header.module.scss';
 import SiteNav from './SiteNav';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={s.header}>
       <div className={classNames('container', s.header__wrap)}>
@@ -20,9 +26,15 @@ const Header = () => {
         <SiteNav />
         <ContactInfo />
 
-        <Button className={s.header__btn} size="m" variant="transparent">
+        <Button
+          className={s.header__btn}
+          size="m"
+          variant="transparent"
+          onClick={() => setIsOpen(true)}
+        >
           <SvgIcon id="menu-burger" width={40} height={40} />
         </Button>
+        <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </header>
   );

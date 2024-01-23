@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import ContactLink from '@/components/ContactLink';
+import ContactLink from '@/components/ui/ContactLink';
 import { Section } from '@/components/ui/Section';
 import SvgIcon from '@/components/ui/SvgIcon';
 import { Typo } from '@/components/ui/Typo';

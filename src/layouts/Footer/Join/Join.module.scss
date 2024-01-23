@@ -1,0 +1,15 @@
+@import 'mixins';
+
+.join {
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: fit-content;
+  }
+}
