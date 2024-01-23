@@ -20,8 +20,8 @@ const Header = () => {
         <SiteNav />
         <ContactInfo />
 
-        <Button className={s.header__button} size="m" variant="transparent">
-          <SvgIcon id="modal-burger" width={40} height={40} />
+        <Button className={s.header__btn} size="m" variant="transparent">
+          <SvgIcon id="menu-burger" width={40} height={40} />
         </Button>
       </div>
     </header>

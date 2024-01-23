@@ -12,7 +12,7 @@ interface IButtonProps {
   className?: string;
   size?: Size;
   type?: 'button' | 'submit' | 'reset';
-  variant?: 'default' | 'outlined' | 'transparent';
+  variant?: 'default' | 'outlined' | 'transparent' | 'disabled';
   label?: string;
   children?: ReactElement;
 }

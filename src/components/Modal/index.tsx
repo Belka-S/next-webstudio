@@ -12,32 +12,44 @@ declare global {
 
 interface IModalProps {
   className?: string;
-  onClick: () => void;
+  setIsModal: (isModal: boolean) => void;
+  background?: 'default' | 'transparent';
+  blur?: 'none';
   children: ReactNode;
 }
 
-const Modal: FC<IModalProps> = ({ className, onClick, children }) => {
+const Modal: FC<IModalProps> = ({
+  className,
+  setIsModal,
+  background = 'default',
+  blur,
+  children,
+}) => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent<Document>) => {
-      if ((e as KeyboardEvent<Document>).key === 'Escape') onClick();
+      if ((e as KeyboardEvent<Document>).key === 'Escape') setIsModal(false);
     };
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [onClick]);
+  }, [setIsModal]);
 
   const handleBackdropClick = (e: MouseEvent<HTMLDivElement>) => {
-    e.target === e.currentTarget && onClick();
+    e.target === e.currentTarget && setIsModal(false);
   };
 
   return (
     <div
-      className={classNames(s.backdrop, className)}
+      className={classNames(
+        s.backdrop,
+        background && s[background],
+        blur && s[`blur__${blur}`],
+      )}
       onClick={handleBackdropClick}
     >
-      <div className={s.modal}>{children}</div>
+      <div className={classNames(s.modal, className)}>{children}</div>
     </div>
   );
 };

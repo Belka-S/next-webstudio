@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms;
 
   cursor: pointer;
   background: none;
@@ -35,7 +36,6 @@
 .default {
   background-color: var(--accent-color);
   color: var(--white-color);
-  transition: background-color 250ms;
 
   &:hover,
   &:focus {
@@ -46,7 +46,6 @@
 .outlined {
   border: 1px solid var(--border-color);
   color: var(--black-color);
-  transition: background-color 250ms;
 
   &:hover,
   &:focus {
@@ -57,5 +56,10 @@
 .transparent {
   border: none;
   color: var(--black-color);
-  transition: background-color 250ms;
+}
+
+.disabled {
+  border: none;
+  background-color: var(--icon-color);
+  color: var(--white-color);
 }

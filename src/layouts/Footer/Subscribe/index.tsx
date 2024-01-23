@@ -32,7 +32,7 @@ const Subscribe = () => {
         />
 
         <Button
-          className={s.subscribe__button}
+          className={s.subscribe__btn}
           type="submit"
           size="m"
           label="Subscribe"

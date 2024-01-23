@@ -87,11 +87,28 @@
   color: var(--primary-bg-color);
 }
 
-.hero__button {
+.hero__btn {
   min-width: 200px;
   margin: 0 auto;
 
   @include desktop {
     min-width: 220px;
   }
+}
+
+.hero__modal {
+  width: calc(100% - 2 * 15px);
+  padding: 40px;
+
+  @include tablet {
+    width: 480px;
+  }
+
+  @include desktop {
+    width: 530px;
+    height: 580px;
+  }
+
+  border-radius: 4px;
+  background-color: var(--primary-bg-color);
 }
