@@ -25,6 +25,7 @@ const Header = () => {
 
         <SiteNav />
         <ContactInfo />
+        <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
         <Button
           className={s.header__btn}
@@ -34,7 +35,6 @@ const Header = () => {
         >
           <SvgIcon id="menu-burger" width={40} height={40} />
         </Button>
-        <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </header>
   );
