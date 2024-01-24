@@ -49,6 +49,7 @@
 
 .nav__link {
   text-decoration: none;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -94,15 +95,15 @@
 .socials__link {
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.22;
+  line-height: 1.5;
   color: var(--accent-color);
 
   &:not(:first-of-type) {
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
   &:not(:last-of-type) {
-    padding-right: 10px;
+    padding-right: 5px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 
