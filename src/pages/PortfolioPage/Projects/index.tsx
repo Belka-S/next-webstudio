@@ -43,13 +43,7 @@ const Projects = () => {
       <div className={s.projects}>
         {projects.map(el => {
           return (
-            <a
-              className={s.projects__link}
-              href={el.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={el.href}
-            >
+            <div className={s.projects__wrap} key={el.href}>
               <div className={s.image__wrap}>
                 <Image
                   src={images.find(img => img.name === el.name).file}
@@ -57,15 +51,20 @@ const Projects = () => {
                 />
                 <p className={s.projects__description}>{el.value}</p>
               </div>
-              <div className={s.projects__wrap}>
+              <a
+                className={s.projects__link}
+                href={el.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Typo el="h5" className={s.projects__title}>
                   {el.name.replaceAll('-', ' ')}
                 </Typo>
                 <Typo el="p" fontWeight={400} className={s.projects__type}>
                   {el.type}
                 </Typo>
-              </div>
-            </a>
+              </a>
+            </div>
           );
         })}
       </div>
