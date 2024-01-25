@@ -3,8 +3,8 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { Button } from '@/components/ui/Button';
+import P from '@/components/ui/Typography/P';
 import SvgIcon from '@/components/ui/SvgIcon';
-import { Typo } from '@/components/ui/Typo';
 
 import s from './Subscribe.module.scss';
 
@@ -21,7 +21,7 @@ const Subscribe = () => {
 
   return (
     <div className={s.subscribe}>
-      <Typo el="p">Subscribe</Typo>
+      <P>Subscribe</P>
 
       <form className={s.subscribe__form} onSubmit={handleSubmit(onSubmit)}>
         <input

@@ -1,6 +1,7 @@
+import H6 from '@/components/ui/Typography/H6';
+import P from '@/components/ui/Typography/P';
 import { Section } from '@/components/ui/Section';
 import SvgIcon from '@/components/ui/SvgIcon';
-import { Typo } from '@/components/ui/Typo';
 
 import data from './advantages.json';
 import s from './Advantages.module.scss';
@@ -15,12 +16,10 @@ const Advantages = () => {
             <div className={s.advantages__wrap}>
               <SvgIcon id={el.svgId} width={70} height={70} />
             </div>
-            <Typo el="h6" className={s.advantages__title}>
-              {el.title}
-            </Typo>
-            <Typo el="p" fontWeight={400} className={s.advantages__text}>
+            <H6 className={s.advantages__title}>{el.title}</H6>
+            <P fontWeight={400} className={s.advantages__text}>
               {el.value}
-            </Typo>
+            </P>
           </li>
         ))}
       </ul>
