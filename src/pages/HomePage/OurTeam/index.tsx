@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ContactLink from '@/components/ui/ContactLink';
 import H2 from '@/components/ui/Typography/H2';
 import H5 from '@/components/ui/Typography/H5';
+import P from '@/components/ui/Typography/P';
 import { Section } from '@/components/ui/Section';
 import SvgIcon from '@/components/ui/SvgIcon';
 import { IContactData } from '@/utils/constants/contactData';
@@ -36,9 +37,9 @@ const OurTeam = () => (
               <H5 fontWeight={500} className={s.ourteam__member}>
                 {data[img.id].name}
               </H5>
-              <Typo el="p" fontWeight={400} className={s.ourteam__position}>
+              <P fontWeight={400} className={s.ourteam__position}>
                 {data[img.id].position}
-              </Typo>
+              </P>
 
               <div className={s.socials__wrap}>
                 {socials.map(socials => (

@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import Image from 'next/image';
 
 import H2 from '@/components/ui/Typography/H2';
+import P from '@/components/ui/Typography/P';
 import { Section } from '@/components/ui/Section';
 import images from '@/utils/context/aboutusContext';
 
@@ -15,9 +16,7 @@ const AboutUs = () => {
       <ul className={s.aboutus__list}>
         {images.map(el => (
           <li className={s.aboutus__item} key={el.id}>
-            <Typo el="p" className={s.aboutus__text}>
-              {el.name.replace('-', ' ')}
-            </Typo>
+            <P className={s.aboutus__text}>{el.name.replace('-', ' ')}</P>
 
             <Image
               src={el.file}
