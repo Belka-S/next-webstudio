@@ -1,9 +1,10 @@
 import Image from 'next/image';
 
 import ContactLink from '@/components/ui/ContactLink';
+import H2 from '@/components/ui/Typography/H2';
+import H5 from '@/components/ui/Typography/H5';
 import { Section } from '@/components/ui/Section';
 import SvgIcon from '@/components/ui/SvgIcon';
-import { Typo } from '@/components/ui/Typo';
 import { IContactData } from '@/utils/constants/contactData';
 import images from '@/utils/context/ourteamContext';
 
@@ -20,9 +21,7 @@ const socials: Partial<keyof IContactData>[] = [
 const OurTeam = () => (
   <Section className={s.ourteam}>
     <div className="container">
-      <Typo el="h2" className={s.ourteam__title}>
-        Our team
-      </Typo>
+      <H2 className={s.ourteam__title}>Our team</H2>
       {/* image */}
       <ul className={s.ourteam__list}>
         {images.map(img => (
@@ -34,9 +33,9 @@ const OurTeam = () => (
             />
             {/* socials */}
             <div className={s.ourteam__wrap}>
-              <Typo el="h5" fontWeight={500} className={s.ourteam__member}>
+              <H5 fontWeight={500} className={s.ourteam__member}>
                 {data[img.id].name}
-              </Typo>
+              </H5>
               <Typo el="p" fontWeight={400} className={s.ourteam__position}>
                 {data[img.id].position}
               </Typo>

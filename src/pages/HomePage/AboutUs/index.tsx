@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 
+import H2 from '@/components/ui/Typography/H2';
 import { Section } from '@/components/ui/Section';
-import { Typo } from '@/components/ui/Typo';
 import images from '@/utils/context/aboutusContext';
 
 import s from './AboutUs.module.scss';
@@ -10,9 +10,7 @@ import s from './AboutUs.module.scss';
 const AboutUs = () => {
   return (
     <Section className={classNames(s.aboutus, 'container')}>
-      <Typo el="h2" className={s.aboutus__title}>
-        About Us
-      </Typo>
+      <H2 className={s.aboutus__title}>About Us</H2>
 
       <ul className={s.aboutus__list}>
         {images.map(el => (

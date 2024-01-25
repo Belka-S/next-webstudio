@@ -1,6 +1,6 @@
+import H2 from '@/components/ui/Typography/H2';
 import { Section } from '@/components/ui/Section';
 import SvgIcon from '@/components/ui/SvgIcon';
-import { Typo } from '@/components/ui/Typo';
 
 import data from './customers.json';
 import s from './Customers.module.scss';
@@ -8,9 +8,7 @@ import s from './Customers.module.scss';
 const Customers = () => {
   return (
     <Section className="container">
-      <Typo el="h2" className={s.customers__title}>
-        Regular customers
-      </Typo>
+      <H2 className={s.customers__title}>Regular customers</H2>
       <ul className={s.customers__list}>
         {data.map(el => (
           <li className={s.customers__item} key={el.svgId}>
